@@ -76,49 +76,12 @@ $(function () {
                       <i></i>
                       <select name="cause_filter" style="display: none;">
                         <option value=""></option>
+
                         <option value="">Any Cause</option>
-
-                        <option value="33">Animals</option>
-
-                        <option value="34">Arts &amp; Culture</option>
-
-                        <option value="46">Black Male Achievement</option>
-
-                        <option value="35">Civil Rights</option>
-
-                        <option value="45">Community &amp; Economic Development</option>
-
-                        <option value="41">Disaster Relief</option>
-
-                        <option value="42">Disease &amp; Medical Research</option>
-
-                        <option value="8">Education</option>
-
-                        <option value="43">Employment Services</option>
-
-                        <option value="9">Environment</option>
-
-                        <option value="40">Health &amp; Nutrition</option>
-
-                        <option value="13">Housing &amp; Homelessness</option>
-
-                        <option value="37">Human Services</option>
-
-                        <option value="21">International Affairs</option>
-
-                        <option value="36">Justice &amp; Legal Services</option>
-
-                        <option value="47">Maternal Health</option>
-
-                        <option value="39">Philanthropy &amp; Capacity Building</option>
-
-                        <option value="38">Religion &amp; Spirituality</option>
-
-                        <option value="29">Science &amp; Technology</option>
-
-                        <option value="27">Women's Issues </option>
-
-                        <option value="44">Youth Development</option>
+                        <?php
+                          foreach($causes as $cause)
+                            echo "<option value=\"$cause->id\">$cause->cause</option>";
+                        ?>
 
                       </select>
 
@@ -131,55 +94,10 @@ $(function () {
                       <select name="skill_filter" style="display: none;">
                         <option value=""></option>
 
-                        <option value="2">Accounting</option>
-
-                        <option value="21">Branding</option>
-
-                        <option value="19">Business Development</option>
-
-                        <option value="27">Coaching</option>
-
-                        <option value="4">Communications</option>
-
-                        <option value="28">Data Analysis</option>
-
-                        <option value="29">Database Administration</option>
-
-                        <option value="24">Digital Marketing</option>
-
-                        <option value="26">Entrepreneurship</option>
-
-                        <option value="6">Finance</option>
-
-                        <option value="16">Fundraising</option>
-
-                        <option value="5">Graphic Design</option>
-
-                        <option value="7">Human Resources</option>
-
-                        <option value="30">Information Technology</option>
-
-                        <option value="35">Legal</option>
-
-                        <option value="31">Management</option>
-
-                        <option value="9">Marketing</option>
-
-                        <option value="11">Photography &amp; Video</option>
-
-                        <option value="12">Public Relations</option>
-
-                        <option value="36">Research</option>
-
-                        <option value="13">Social Media</option>
-
-                        <option value="14">Strategy Consulting</option>
-
-                        <option value="33">Web Design</option>
-
-                        <option value="34">Web Development</option>
-
-                        <option value="23">Writing</option>
+                        <?php
+                          foreach($skills as $skill)
+                            echo "<option value=\"$skill->id\">$skill->skill</option>";
+                        ?>
 
                       </select>
                       <!-- Coming through JQUERY-->
@@ -1124,7 +1042,7 @@ $(function () {
                   </div><!-- panel-organizationcall -->
 
 
-                  <section class="case-studies block clear">
+    <!--              <section class="case-studies block clear">
                     <h1>Success stories</h1>
                     <a class="options link" href="https://www.catchafire.org/case_studies/">[ See all ]</a>
                     <article class="featured side-block">
@@ -1236,20 +1154,21 @@ $(function () {
 
                       </div>
                     </section>
-
-                    <div class="banner-home-enterprisesolution">
+-->
+<!--                    <div class="banner-home-enterprisesolution">
                       <h1>Catchafire Enterprise Solution</h1>
                       <h2><span class="rotate"><span class="rotating flip up" style="display: block; -webkit-transform: rotateX(-180deg); transform: rotateX(-180deg);"><span class="front">Take your cause campaign to the next level with an action platform.</span><span class="back">Increase employee engagement, happiness, retention and attraction.</span></span></span></h2>
                       <img src="./Catchafire - Skills-Based Volunteer Matching_files/banner-enterprisesolution.jpg">
                       <a class="btn-action big" href="https://www.catchafire.org/howitworks/enterprises">Learn more</a>
-                    </div><!-- banner-home-enterprisesolution -->
+                    </div>-->
+                    <!-- banner-home-enterprisesolution -->
 
 
 
                   </div><!-- container -->
 
                 </div><!-- featuredprojects -->
-                <script type="text/javascript" src="./Catchafire - Skills-Based Volunteer Matching_files/jquery.simpletextrotator.js"></script>
+                <script type="text/javascript" src="<?php echo e(asset('/js/jquery.simpletextrotator.js')); ?>"></script>
                 <script>
                   $(".rotate").textrotator({
                     animation: "flipUp",
