@@ -1,0 +1,80 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <!-- Framelayout to display Fragments -->
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Listview to display slider menu -->
+    
+    <LinearLayout    
+        android:id="@+id/linearLayout"
+       	android:layout_width="240dp"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_gravity="start"
+    	android:background="@color/list_background"
+    	android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+          >
+    
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"    	
+        android:layout_marginBottom="20dp">
+    
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" 
+        >
+
+        <ImageView
+            android:id="@+id/myBloodGroup"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_whats_hot" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/donorMenuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hunain Arif"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        android:textColor="@color/list_item_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"        
+        android:listSelector="@drawable/list_selector"
+        android:background="@color/list_background"/>
+        
+    </LinearLayout>
+    
+    
+    
+    
+    
+</android.support.v4.widget.DrawerLayout>
