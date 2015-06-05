@@ -24,7 +24,7 @@ $( "body" ).removeClass( "homepage" );
 	    <img src="{{ asset('img/header_image_login_register.jpg') }}" alt="">
 	    <div>
 	        <h1>Join a community of people who care as much as you do.</h1>
-	        <p>Catchafire matches skilled volunteers with nonprofits and other social good organizations to help them build capacity.</p>
+
 	    </div>
 	</header>
 
@@ -37,11 +37,11 @@ $( "body" ).removeClass( "homepage" );
                 <h2 class="header">New to Catchafire?</h2>
 
 
-                <p>Create a Catchafire account to join a community focused on skilled volunteers and the causes that drive them.</p>
+                <p>Create a iVolunteer account to join a community focused on skilled volunteers and the causes that drive them.</p>
 
 
                 <p class="text-center">
-                <a href="https://www.catchafire.org/account/register/" class="button">Create account</a>
+                <a href="/auth/register/" class="button">Create account</a>
                 </p>
             </div>
 

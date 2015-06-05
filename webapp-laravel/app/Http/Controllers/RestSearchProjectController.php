@@ -14,6 +14,7 @@ use App\projectSkill;
 use App\projectStatus;
 use App\Skill;
 use App\Cause;
+use App\ngoProfile;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class RestSearchProjectController extends Controller {
@@ -88,6 +89,7 @@ class RestSearchProjectController extends Controller {
 					}
 				}
 
+				//AS WE DONE HAVE DUMMY DATA YET :P
 				array_push($skillList,'website');
 
 				if(count($skillList)>0){
@@ -105,16 +107,38 @@ class RestSearchProjectController extends Controller {
 				}
 
 
+
 				//$projects = $projects[0];
 				//print_r($projects);
 				$projects = $projects[0];
-				$cn = count($projects);
+				$cn = 0;
+
+
+				foreach($projects as $pr){
+
+					$status = projectStatus::where('id','=',$pr->id)->get();
+					if($status[0]->status == 'close'){
+						continue;
+					}
+					if($status[0]->status == 'working'){
+						continue;
+					}
+					$cn = $cn + 1;
+				}
 				//print_r($cn);
 				$res =" <div class=\"opportunities-results\"><h3>$cn projects found</h3></div>";
 
 				$res = $res . "<article class=\"pbm-project-status\">";
 
 				foreach($projects as $pr){
+
+					$status = projectStatus::where('id','=',$pr->id)->get();
+					if($status[0]->status == 'close'){
+						continue;
+					}
+					if($status[0]->status == 'working'){
+						continue;
+					}
 						$opp= "<div id=\"pr-$pr->id\" class=\"panel-projectcard \"><div class=\"inner\">";
 
 						//header
@@ -141,14 +165,15 @@ class RestSearchProjectController extends Controller {
 					$opp = $opp .  "<section><div class=\"organizationinfo\">";
 
 
+					$ngoa = ngoProfile::find($pr->posted_by_ngo);
+					$opp = $opp . "<a href=\"/ngo/$ngoa->name\"><img style=\"height: 32px; width: 32px;\" src=\"/img/$ngoa->image\"></a>";
 
-					$opp = $opp . "<a href=\"#\"><img style=\"height: 32px; width: 32px;\" src=\"./Catchafire - Projects_files/ssheth_50x50_cropped.png\"></a>";
 
-
-				   $opp = $opp . "<h3><a href=\"#\">Ektta</a></h3>";
-		      $opp = $opp ."<h4><a href=\"#\">Community &amp; Economic Development</a></h4>";
+					$ngo_name = strtoupper($ngoa->name);
+				   $opp = $opp . "<h3><a href=\"/ngo/$ngoa->name\">$ngo_name</a></h3>";
+		      $opp = $opp ."<h4>&nbsp;</h4>";
 					 $opp = $opp . "</div><!-- organizationinfo -->";
-				    $opp = $opp . "<a class=\"btn-action btn-volunteer\" href=\"#\">Volunteer</a>";
+				    $opp = $opp . "<a class=\"btn-action btn-volunteer\" href=\"/projects/$pr->id\">Volunteer</a>";
 						$opp = $opp .   "</section>";
 
 

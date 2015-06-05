@@ -58,7 +58,7 @@ $c = NgoDCause::where('id','=','1')->firstOrFail();
 
 		$profile = ngoProfile::where('name','=',$id)->firstOrFail();
 
-		$c = NgoDCause::where('id','=','1')->get();
+		$c = NgoDCause::where('id','=',$profile->id)->get();
 		setlocale(LC_MONETARY,"en_US.utf8");
 		$mon = money_format('%!.0i', $profile->amountSaved);
 

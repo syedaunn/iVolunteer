@@ -36,6 +36,14 @@ class HomeController extends Controller {
 	public function index()
 	{
 
+		$user =Auth::user();
+		$profile = UserProfile::find($user->id);
+		$causes = $profile->causes();
+		$skills = $profile->skills();
+		$projects = $profile->projects();
+	return view('dashboard',['user' => $user, 'profile' => $profile, 'causes' => $causes , 'skills' => $skills, 'projects' => $projects]);
+
+	
 			$user =Auth::user();
 			$profile = UserProfile::find($user->id);
 			//$c = //$profile->causes();

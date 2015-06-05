@@ -461,7 +461,7 @@ $( "body" ).addClass( "page-opportunities" );
             <h1 class="page-title">Find a Project</h1>
 
             <a class="btn-skillscauses" href="#" style="display: none;">Search by causes/skills</a>
-            <form method="GET" id="search-form" action="./Catchafire - Projects_files/Catchafire - Projects.html" class="search-wrap">
+            <form method="GET" id="search-form" action="#" class="search-wrap">
               <input type="text" class="search" placeholder="Search" name="name_filter" id="search" autocomplete="off" value="">
             </form>
 
@@ -469,7 +469,7 @@ $( "body" ).addClass( "page-opportunities" );
 
           <section class="filters-search clearfix" style="display: none;">
             <a class="btn-action" href="#">Search</a>
-            <form method="GET" id="search-form-large" action="./Catchafire - Projects_files/Catchafire - Projects.html">
+            <form method="GET" id="search-form-large" action="#">
               <input type="text" name="name_filter" autocomplete="off" value="">
             </form>
           </section>
@@ -526,7 +526,7 @@ $( "body" ).addClass( "page-opportunities" );
               <div class="opportunities-results">
 
 
-                <h3>5 projects found</h3>
+                <h3>1 projects found</h3>
 
 
               </div><!-- opportunities-results -->
@@ -539,8 +539,8 @@ $( "body" ).addClass( "page-opportunities" );
                   <div class="inner">
                     <header>
                       <div style="background-image: url(&#39;/static/19998/images/project_types/website_design_40x40.png&#39;)"></div>
-                      <h2><a href="https://www.catchafire.org/projects/9795/">WordPress Website Construction</a></h2>
-                      <h5><a href="https://www.catchafire.org/projects/9795/">
+                      <h2><a href="">WordPress Website Construction</a></h2>
+                      <h5><a href="">
                         35-45 hours
                         over 1-2 months
                       </a></h5>
@@ -549,7 +549,7 @@ $( "body" ).addClass( "page-opportunities" );
 
 
                     </header>
-                    <a href="https://www.catchafire.org/projects/9795/">
+                    <a href="#">
                       <figure style="background-image: url(&#39;//www.catchafire.org/media/19998/images/np_covers/86cfce4b938e46a59a06ee38ad1422c6_300x180_cropped.png&#39;)" class="hasimage">
                         <i></i>
                         <figcaption>
@@ -572,11 +572,11 @@ $( "body" ).addClass( "page-opportunities" );
 
 
 
-                        <a href="https://www.catchafire.org/organizations/ektta_3889"><img style="height: 32px; width: 32px;" src="./Catchafire - Projects_files/ssheth_50x50_cropped.png"></a>
+                        <a href="#"></a>
 
 
-                        <h3><a href="https://www.catchafire.org/organizations/ektta_3889">Ektta</a></h3>
-                        <h4><a href="https://www.catchafire.org/organizations/ektta_3889">Community &amp; Economic Development</a></h4>
+                        <h3><a href="#">Ektta</a></h3>
+                        <h4>&nbsp;</h4>
                       </div><!-- organizationinfo -->
                       <a class="btn-action btn-volunteer" href="https://www.catchafire.org/projects/9795/">Volunteer</a>
                     </section>
@@ -585,207 +585,6 @@ $( "body" ).addClass( "page-opportunities" );
 
 
 
-
-                <div class="panel-projectcard ">
-                  <div class="inner">
-                    <header>
-                      <div style="background-image: url(&#39;/static/19998/images/project_types/website_design_40x40.png&#39;)"></div>
-                      <h2><a href="https://www.catchafire.org/projects/9738/">WordPress Website Construction</a></h2>
-                      <h5><a href="https://www.catchafire.org/projects/9738/">
-                        35-45 hours
-                        over 1-2 months
-                      </a></h5>
-
-
-
-
-                    </header>
-                    <a href="https://www.catchafire.org/projects/9738/">
-                      <figure style="background-image: url(&#39;//www.catchafire.org/media/19998/images/np_covers/14583871e48f495e8c6dce22d3065dde_300x180_cropped.JPG&#39;)" class="hasimage">
-                        <i></i>
-                        <figcaption>
-                          <p>
-                            This project will save us $6,750, allowing us to <strong>connect resources to 5,000  people impacted by disabilities.</strong>
-                          </p>
-                          <div>
-                            <h4>Brittany M</h4>
-                            <h5>Founder &amp; Executive Director</h5>
-
-
-                            <img height="32" width="32" src="./Catchafire - Projects_files/b96080ead7cf4e9d900743bdb561c4c9_45x45_cropped.png">
-
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </a>
-                    <section>
-                      <div class="organizationinfo">
-
-
-
-                        <a href="https://www.catchafire.org/organizations/ablethrive_7990"><img style="height: 32px; width: 32px;" src="./Catchafire - Projects_files/4af5ec8e33534a61b857ffb212e1a285_50x50_cropped.png"></a>
-
-
-                        <h3><a href="https://www.catchafire.org/organizations/ablethrive_7990">AbleThrive</a></h3>
-                        <h4><a href="https://www.catchafire.org/organizations/ablethrive_7990">Health &amp; Nutrition</a></h4>
-                      </div><!-- organizationinfo -->
-                      <a class="btn-action btn-volunteer" href="https://www.catchafire.org/projects/9738/">Volunteer</a>
-                    </section>
-                  </div><!-- inner -->
-                </div><!-- panel-projectcard panel-whitebox -->
-
-
-
-
-                <div class="panel-projectcard ">
-                  <div class="inner">
-                    <header>
-                      <div style="background-image: url(&#39;/static/19998/images/project_types/website_design_40x40.png&#39;)"></div>
-                      <h2><a href="https://www.catchafire.org/projects/9672/">Website Visual Design</a></h2>
-                      <h5><a href="https://www.catchafire.org/projects/9672/">
-                        35-45 hours
-                        over 1-2 months
-                      </a></h5>
-
-
-
-
-                    </header>
-                    <a href="https://www.catchafire.org/projects/9672/">
-                      <figure style="background-image: url(&#39;//www.catchafire.org/media/19998/images/np_covers/d1a2a64694e24eca8b0c70deb2117fb6_300x180_cropped.JPG&#39;)" class="hasimage">
-                        <i></i>
-                        <figcaption>
-                          <p>
-                            This project will save us $6,750, allowing us to <strong>make our software accessible to our 3 most important clients: communities, partners and donors.</strong>
-                          </p>
-                          <div>
-                            <h4>Jason F</h4>
-                            <h5>Founder / Director / Paramedic</h5>
-
-
-                            <img height="32" width="32" src="./Catchafire - Projects_files/239425bb3a5644b19693ee375f99cddd_45x45_cropped.png">
-
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </a>
-                    <section>
-                      <div class="organizationinfo">
-
-
-
-                        <a href="https://www.catchafire.org/organizations/trek-medics-international_8453"><img style="height: 32px; width: 32px;" src="./Catchafire - Projects_files/7f9cb604832148a8b0876c4a6e837d99_50x50_cropped.png"></a>
-
-
-                        <h3><a href="https://www.catchafire.org/organizations/trek-medics-international_8453">Trek Medics International</a></h3>
-                        <h4><a href="https://www.catchafire.org/organizations/trek-medics-international_8453">Health &amp; Nutrition</a></h4>
-                      </div><!-- organizationinfo -->
-                      <a class="btn-action btn-volunteer" href="https://www.catchafire.org/projects/9672/">Volunteer</a>
-                    </section>
-                  </div><!-- inner -->
-                </div><!-- panel-projectcard panel-whitebox -->
-
-
-
-
-                <div class="panel-projectcard ">
-                  <div class="inner">
-                    <header>
-                      <div style="background-image: url(&#39;/static/19998/images/project_types/website_ui_40x40.png&#39;)"></div>
-                      <h2><a href="https://www.catchafire.org/projects/9596/">Website User Interface (UI)</a></h2>
-                      <h5><a href="https://www.catchafire.org/projects/9596/">
-                        35-45 hours
-                        over 1-2 months
-                      </a></h5>
-
-
-
-
-                    </header>
-                    <a href="https://www.catchafire.org/projects/9596/">
-                      <figure style="background-image: url(&#39;//www.catchafire.org/media/19998/images/np_covers/2ca47a9867824a10898930fac7350425_300x180_cropped.jpg&#39;)" class="hasimage">
-                        <i></i>
-                        <figcaption>
-                          <p>
-                            This project will save us $6,750, allowing us to <strong>provide STEM mentorship to 1,200 youth from around the Greater NYC area.</strong>
-                          </p>
-                          <div>
-                            <h4>Rebecca G</h4>
-                            <h5>Co-Founder of CoderDojo NYC</h5>
-
-
-                            <img height="32" width="32" src="./Catchafire - Projects_files/46db491459ad4b3c9e0aede46b3b251d_45x45_cropped.png">
-
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </a>
-                    <section>
-                      <div class="organizationinfo">
-
-
-
-                        <a href="https://www.catchafire.org/organizations/coderdojo-nyc_4782"><img style="height: 32px; width: 32px;" src="./Catchafire - Projects_files/2a9a0cc231754f2a9f614979a1f20141_50x50_cropped.png"></a>
-
-
-                        <h3><a href="https://www.catchafire.org/organizations/coderdojo-nyc_4782">CoderDojo NYC</a></h3>
-                        <h4><a href="https://www.catchafire.org/organizations/coderdojo-nyc_4782">Community &amp; Economic Development</a></h4>
-                      </div><!-- organizationinfo -->
-                      <a class="btn-action btn-volunteer" href="https://www.catchafire.org/projects/9596/">Volunteer</a>
-                    </section>
-                  </div><!-- inner -->
-                </div><!-- panel-projectcard panel-whitebox -->
-
-
-
-
-                <div class="panel-projectcard ">
-                  <div class="inner">
-                    <header>
-                      <div style="background-image: url(&#39;/static/19998/images/project_types/website_design_40x40.png&#39;)"></div>
-                      <h2><a href="https://www.catchafire.org/projects/9235/">Website Visual Design</a></h2>
-                      <h5><a href="https://www.catchafire.org/projects/9235/">
-                        35-45 hours
-                        over 1-2 months
-                      </a></h5>
-
-
-
-
-                    </header>
-                    <a href="https://www.catchafire.org/projects/9235/">
-                      <figure style="background-image: url(&#39;//www.catchafire.org/media/19998/images/np_covers/106089e1f03745fd840182f86836f33f_300x180_cropped.jpg&#39;)" class="hasimage">
-                        <i></i>
-                        <figcaption>
-                          <p>
-                            This project will save us $6,750, allowing us to <strong>recruit  800 unemployed, underemployment Detroiters.</strong>
-                          </p>
-                          <div>
-                            <h4>Alicia J</h4>
-                            <h5>Social Engineer</h5>
-
-
-                            <img height="32" width="32" src="./Catchafire - Projects_files/baa035f0032e493aa61778a35748ec33_45x45_cropped.png">
-
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </a>
-                    <section>
-                      <div class="organizationinfo">
-
-
-
-                        <a href="https://www.catchafire.org/organizations/harmony-point-ctc_8025"><img style="height: 32px; width: 32px;" src="./Catchafire - Projects_files/182772566f6a4eee8487295d37cd086c_50x50_cropped.png"></a>
-
-
-                        <h3><a href="https://www.catchafire.org/organizations/harmony-point-ctc_8025">Harmony Point CTC</a></h3>
-                        <h4><a href="https://www.catchafire.org/organizations/harmony-point-ctc_8025">Community &amp; Economic Development</a></h4>
-                      </div><!-- organizationinfo -->
-                      <a class="btn-action btn-volunteer" href="https://www.catchafire.org/projects/9235/">Volunteer</a>
-                    </section>
-                  </div><!-- inner -->
-                </div><!-- panel-projectcard panel-whitebox -->
 
 
 
